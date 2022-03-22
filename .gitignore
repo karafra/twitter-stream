@@ -39,4 +39,3 @@ output.coverage
 output.xml
 output.cobertura.xml
 codecov
-configuration.yml
