@@ -1,0 +1,8 @@
+logging:
+    level: debug
+twitter:
+    apiKey: 
+    apiSecret: 
+    bearerToken: 
+
+       

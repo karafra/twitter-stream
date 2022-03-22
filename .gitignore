@@ -37,3 +37,5 @@ msbuild.wrn
 .vs/
 output.coverage
 output.xml
+output.cobertura.xml
+codecov
