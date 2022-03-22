@@ -20,6 +20,7 @@ public sealed class TwitterClient : TwitterSharp.Client.TwitterClient
    :
   base(configuration.GetSection("twitter").GetValue<string>("bearer"))
   {
+    // Configuration for possible extension of this class
     _configuration = configuration.GetSection("twitter");
   }
 }
