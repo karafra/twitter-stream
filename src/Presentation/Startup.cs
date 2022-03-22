@@ -40,6 +40,5 @@ internal sealed class Startup
         endpoints.MapControllers();
       }
     );
-    // app.UseWelcomePage();
   }
 }

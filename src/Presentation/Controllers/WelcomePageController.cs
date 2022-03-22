@@ -22,9 +22,9 @@ public sealed class WelcomePageController : Controller
   }
 
   [HttpGet]
-  public string Index()
+  public IActionResult _WelcomePage()
   {
-    return "a";
+    return View();
   }
 
 }

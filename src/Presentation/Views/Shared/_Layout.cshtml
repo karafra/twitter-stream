@@ -1,0 +1,51 @@
+@{
+  if(ViewData["Title"] is null)
+  {
+    ViewData["Title"] = "Document";
+  }
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>@ViewData["Title"]</title>
+    <meta name="description" content="Sample code">
+    <meta name="author" content="Test code limited">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+
+    <!-- Bunch of CSS styles -->
+</head>
+
+<body>
+  <div id="app-main">
+      <div id="app-header" class="app-header">
+          @await Html.PartialAsync("~/Views/Shared/_Header.cshtml")
+      </div>
+
+      <div id="app-content" class="app-content">
+          <div id="app-drawer" class="drawerjs drawerjs-has-bottom-nav">
+              @await Html.PartialAsync("~/Views/Shared/_Drawer.cshtml")
+          </div>
+
+          <div id="app-drawer-holder">
+              <div class="app-content-inner">
+                  @await Html.PartialAsync("~/Views/Shared/_PageHeader.cshtml")
+              </div>
+
+              <div class="app-content-inner">
+                  @RenderBody()
+              </div>
+          </div>
+      </div>
+
+      <div id="app-footer" class="app-footer">
+         @await Html.PartialAsync("~/Views/Shared/_Footer.cshtml")
+      </div>
+  </div>
+
+  <!-- Note the next two lines -->
+  @await Html.PartialAsync("~/Views/Shared/_Scripts.cshtml")
+  @RenderSection("scripts", false)
+</body>
+</html>
