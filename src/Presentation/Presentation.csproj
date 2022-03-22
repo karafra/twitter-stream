@@ -30,4 +30,7 @@
     <AdditionalFiles Include="**\*.cshtml" IsRazorTemplate="true" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Watch Include=".\Views\**\*.cshtml;**\*.cshtml;*.razor;*.js;*.css" Exclude="**\obj\**\*;bin\**\*" />
+  </ItemGroup>
 </Project>
