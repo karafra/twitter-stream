@@ -5,16 +5,18 @@
     <ProjectReference Include="..\Infrastructure\Infrastructure.csproj" />
   </ItemGroup>
 
-
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore" Version="2.2.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration" Version="6.0.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="6.0.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="6.0.0" />
+    <PackageReference Include="MiniRazor" Version="2.2.0" />
+    <PackageReference Include="MiniRazor.CodeGen" Version="2.2.0" />
     <PackageReference Include="NetEscapades.Configuration.Yaml" Version="2.2.0" />
   </ItemGroup>
 
   <PropertyGroup>
+    <EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
     <OutputType>exe</OutputType>
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
@@ -25,6 +27,7 @@
 
   <ItemGroup>
     <None Include="..\..\configuration.yml" CopyToOutputDirectory="Always" />
+    <AdditionalFiles Include="**\*.cshtml" IsRazorTemplate="true" />
   </ItemGroup>
 
 </Project>
