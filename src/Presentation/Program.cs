@@ -31,7 +31,9 @@ public sealed class Program
   public static IWebHost BuildHost(string[] args)
   {
     var builder = WebHost.CreateDefaultBuilder();
+    builder.UseWebRoot(Path.Combine(Directory.GetCurrentDirectory(), "wwwroot"));
     builder.UseStartup<Startup>();
+    builder.UseUrls("http://localhost:5000");
     return builder.Build();
   }
 }
