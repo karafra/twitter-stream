@@ -29,11 +29,13 @@ internal sealed class Startup
     services.AddTwitterClient();
     services.MountApplication();
     services.AddRazorPages();
+    services.AddHttpContextAccessor();
     services.AddControllers();
   }
 
   public void Configure(IApplicationBuilder app)
   {
+    app.UseStaticFiles();
     app.UseRouting();
     app.UseEndpoints(endpoints =>
       {
