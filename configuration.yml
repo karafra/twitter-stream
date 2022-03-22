@@ -1,6 +1,8 @@
 logging:
     level: debug
 twitter:
-    token:
-    bearer:
+    apiKey: YCERXOqfmzqSbZwFrGcoBmFEi
+    apiSecret: gMqS8N9iJ2vzI1jWql9A6dqMluL5KY3GbwZ33ImqKPDSRKRzv2
+    bearerToken: AAAAAAAAAAAAAAAAAAAAAFEKagEAAAAA01n8T3ZQygdjXESWeaHA8yPBNJs%3Dh0dOj3NkyV6pYXXah0vA6ipg3WQOX24JKcH65nCGRooPOOgxgp
+
        
