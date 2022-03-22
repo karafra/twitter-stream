@@ -24,6 +24,7 @@ internal sealed class Startup
   
   public void ConfigureServices(IServiceCollection services)
   {
+    services.AddLogging();
     services.AddSingleton<IConfigurationRoot>(Configuration);
     services.AddTwitterClient();
     services.MountApplication();
@@ -31,6 +32,6 @@ internal sealed class Startup
 
   public void Configure(IApplicationBuilder app)
   {
-    app.ApplicationServices.GetRequiredService<ILogger>();
+
   }
 }

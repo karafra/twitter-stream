@@ -3,6 +3,7 @@ using Moq;
 using Xunit;
 using System.Collections.Generic;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Logging;
 
 namespace Tests.Infrastructure;
 
@@ -28,7 +29,8 @@ public sealed class TwitterClientTests
     // Given
     // When
     TwitterClient twitterClient = new TwitterClient(
-      (IConfigurationRoot) mockConfiguration
+      (IConfigurationRoot) mockConfiguration,
+     new LoggerFactory().CreateLogger<TwitterClient>()
     );
     // Then
     Assert.NotNull(twitterClient);
