@@ -1,20 +1,23 @@
 <style>
-  .main {
-    padding-top: 10px;
-    margin-bottom: 10px;
-    background-color: black;
-    border: 5px solid #657786;
-  }
 
   .nav-bar {
     word-spacing: 40px;
     font-size: 20px;
     font-family: arial;
+    background-color: black;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    border: 5px solid #657786;
   }
 
   .nav-bar ul li a {
     text-decoration: none;
     color: white;
+  }
+
+  .nav-bar ul li {
+    text-decoration: none;
+    color: #1DA1F2;
   }
 
   .nav-bar ul li {
@@ -26,17 +29,29 @@
     border-bottom: 2px solid gray;
     border-radius: 10%;
     padding: 10px;
-    background-color: #1DA1F2;
+    background-color: #AAB8C2;
     color: white;
   }
+
+  .nav-bar ul img {
+    margin-left: -20px
+  }
+
 </style>
-<div class="main">
-  <nav class="nav-bar">
-    <ul>
-      <img src="~/img/logo.png" height="30px"/>
-      <li><a href="#"> Home </a></li>
-      <li><a href="https://github.com/karafra/twitter-stream/blob/master/LICENSE"> License </a></li>
-      <li><a href="https://twitter.com/karafro"> Contact </a></li>
-    </ul>
-  </nav>
-</div>
+  <div class="main">
+    <div class="logo" >
+    </div>
+    <div>
+      <nav class="nav-bar">
+        <ul>
+        <li>
+        <div>
+          <img src="~/img/logo.png" height="30px" />
+        </div>
+        </li>
+          <li><a href="https://github.com/karafra/twitter-stream/"> Source </a></li>
+          <li><a href="https://twitter.com/karafro"> Contact </a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
