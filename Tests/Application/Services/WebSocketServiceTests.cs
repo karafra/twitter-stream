@@ -4,13 +4,19 @@ using Moq;
 using System.Net.WebSockets;
 using Application.Contracts;
 using Microsoft.Extensions.Logging;
-
+using Infrastructure.Twitter;
 using Application.Services;
+
+namespace Tests.Application.Services;
+
 public sealed class WebSocketServiceTests : BaseTestFixture
 {
   private IWebSocketService service;
 
-  private Mock<ILogger<IWebSocketService>> mockLogger;
+  private Mock<ILogger<IWebSocketService>> mockSocketLogger;
+
+  private Mock<ILogger<TwitterClient>> mockClientLogger;
+  private Mock<TwitterClient> mockTwitterClient;
 
   private WebSocketReceiveResult closingWebSocketReceiveResult;
 
@@ -20,8 +26,10 @@ public sealed class WebSocketServiceTests : BaseTestFixture
 
   public WebSocketServiceTests() : base()
   {
-    mockLogger = new();
-    service = new WebSocketService(mockLogger.Object);
+    mockSocketLogger = new();
+    mockClientLogger = new();
+    mockTwitterClient = new(configuration, mockClientLogger.Object);
+    service = new WebSocketService(mockSocketLogger.Object, mockTwitterClient.Object);
     closingWebSocketReceiveResult = new WebSocketReceiveResult(
       8,
       WebSocketMessageType.Close,
@@ -75,16 +83,16 @@ public sealed class WebSocketServiceTests : BaseTestFixture
     ).Callback(() => calls++)
     .Returns(() =>
       {
-        if (calls == 1) 
+        if (calls == 1)
           return
             Task.FromResult<WebSocketReceiveResult>(
               continuingWebSocketReceiveResult
             );
-        return 
+        return
           Task.FromResult<WebSocketReceiveResult>(
             closingWebSocketReceiveResult
           );
-      }  
+      }
     );
     // When
     await service.Echo(mockSocket.Object);
