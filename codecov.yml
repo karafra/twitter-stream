@@ -19,7 +19,9 @@ coverage:
 # --------------
 # which folders/files to ignore
 ignore:
+  - src/**/DependencyInjection.cs
   - Tests/*.cs
+  - Tests/**/*.cs
 
 # Pull request comments:
 # ----------------------
