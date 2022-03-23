@@ -35,6 +35,10 @@ internal sealed class Startup
 
   public void Configure(IApplicationBuilder app)
   {
+    app.UseWebSockets(new WebSocketOptions
+    {
+      KeepAliveInterval = TimeSpan.FromMinutes(1),
+   });
     app.UseStaticFiles();
     app.UseRouting();
     app.UseEndpoints(endpoints =>
