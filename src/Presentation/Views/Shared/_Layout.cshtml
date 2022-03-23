@@ -1,15 +1,12 @@
 @{
-  if(ViewData["Title"] is null)
-  {
-    ViewData["Title"] = "Document";
-  }
+  string Title = Model?.Title ?? ViewData["Title"] ??  "Title";
 }
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>@ViewData["Title"]</title>
+    <title>@ViewData["Title"]  </title>
     <meta name="description" content="Sample code">
     <meta name="author" content="Test code limited">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
