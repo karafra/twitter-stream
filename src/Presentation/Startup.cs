@@ -24,13 +24,18 @@ internal sealed class Startup
 
   public void ConfigureServices(IServiceCollection services)
   {
-    services.AddLogging();
+    services.AddLogging(config => {
+      config.AddDebug();
+      config.AddConsole();
+    });
     services.AddSingleton<IConfigurationRoot>(Configuration);
     services.AddTwitterClient();
     services.MountApplication();
     services.AddRazorPages();
     services.AddHttpContextAccessor();
     services.AddControllers();
+    services.AddEndpointsApiExplorer();
+    services.AddSwaggerGen();
   }
 
   public void Configure(IApplicationBuilder app)
@@ -46,5 +51,7 @@ internal sealed class Startup
         endpoints.MapControllers();
       }
     );
+    app.UseSwagger();
+    app.UseSwaggerUI();
   }
 }
