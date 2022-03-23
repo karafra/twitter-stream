@@ -22,7 +22,7 @@ ignore:
   - src/**/DependencyInjection.cs
   - Tests/*.cs
   - Tests/**/*.cs
-  - Test/**
+  - Tests/**
 
 # Pull request comments:
 # ----------------------
