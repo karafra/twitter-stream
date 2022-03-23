@@ -6,7 +6,7 @@ public static class DependencyInjection
 {
   public static IServiceCollection AddTwitterClient(this IServiceCollection services)
   {
-    services.AddSingleton<TwitterClient>();
+    services.AddSingleton<TwitterSharp.Client.TwitterClient, TwitterClient>();
     return services;
   }
 }
