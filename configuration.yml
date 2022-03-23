@@ -1,8 +1,7 @@
 logging:
     level: debug
 twitter:
-    apiKey: 
-    apiSecret: 
-    bearerToken: 
-
-       
+    apiKey: BLWxxeD0ltzkzrooY6pn8Kk3R 
+    apiSecret: Ovq3JHwOKz9Up6hMxMpQdEhQZbm7k7ZKwXKQvoeqZSNRqNkpUX
+    bearerToken: AAAAAAAAAAAAAAAAAAAAAFEKagEAAAAAOMOecOGCdNn9KPmnCetrvkzv4mM%3DKkZkE8BHzmKYtAADl9DQjuyJVlzhig0rMPKsp5J7a1CxgaI3Du
+    hashtag: "#ukraine"
