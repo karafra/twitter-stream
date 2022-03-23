@@ -22,30 +22,28 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
-
+[![Codecov][codecov-shield]][codecov-url]
 
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/github_username/repo_name">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  <a href="https://github.com/karafra/twitter-stream">
+    <img src=".github/img/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">project_title</h3>
+<h3 align="center">Twitter Stream </h3>
 
   <p align="center">
-    project_description
+    Streaming twitter hashtag to browser
     <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/karafra/twitter-stream/wiki/"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
+    <a href="https://github.com/karafra/twitter-stream">View Demo</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
+    <a href="https://github.com/karafra/twitter-stream/issues">Report Bug</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues">Request Feature</a>
+    <a href="https://github.com/karafra/twitter-stream/issues">Request Feature</a>
   </p>
 </div>
 
@@ -73,7 +71,6 @@
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
@@ -82,25 +79,26 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
+<div align="center">
+
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
+</div>
 
+Simple website project that allows convention hosts to interact with their audiences by streaming tweets with given hashtag to screen.
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
 ### Built With
 
-* [Next.js](https://nextjs.org/)
-* [React.js](https://reactjs.org/)
-* [Vue.js](https://vuejs.org/)
-* [Angular](https://angular.io/)
-* [Svelte](https://svelte.dev/)
-* [Laravel](https://laravel.com)
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
-
+* [.Net 6](https://dotnet.microsoft.com/en-us/)
+* [Razor](https://docs.microsoft.com/en-us/aspnet/core/razor-pages/)
+* [Bootstrap](https://getbootstrap.com/)
+* [JQuery](https://jquery.com/)
+* [Asp.net Core](https://docs.microsoft.com/en-us/aspnet/core/?view=aspnetcore-6.0)
+* [XUnit](https://xunit.net/)
+* [Make](https://www.gnu.org/software/make/)
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
@@ -108,31 +106,33 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+For starting this application follow these steps
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+First verify that you have installed .Net by running the following command
 
+  ```sh
+  $ dotnet --version
+  ```
+If output is in format `6.0.xxx` then you have the correct version, if command results in error or you have outdated version of .net framework then follow installation steps mentioned [here](https://dotnet.microsoft.com/en-us/download).
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
+1. Get a Twitter API keys at [https://developer.twitter.com/](https://developer.twitter.com/en)
 2. Clone the repo
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   git clone https://github.com/karafra/twitter-stream.git
    ```
-3. Install NPM packages
+3. Install dependencies
    ```sh
-   npm install
+   dotnet restore
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
+4. Enter your API keys into *twitter* section of [configuration file](./configuration.yml)
+   ```yml
+    twitter:
+      apiKey: YOUR_API_KEY
+      apiSecret: YOUR_API_SECRET
+      bearerToken: YOUR_BEARER_TOKEN
    ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -142,7 +142,7 @@ This is an example of how to list things you need to use the software and how to
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+Running this application is as simple as opening web browser. Literally ... :tada:
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
@@ -158,7 +158,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 - [ ] Feature 3
     - [ ] Nested Feature
 
-See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/karafra/twitter-stream/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -194,37 +194,27 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+Your Name - [@karafro](https://twitter.com/karafro) - dariusKralovic@protonmail.com.com
 
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-* []()
-* []()
-* []()
+Project Link: [https://github.com/karafra/twitter-stream](https://github.com/karafra/twitter-stream)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
-[contributors-url]: https://github.com/github_username/repo_name/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/github_username/repo_name.svg?style=for-the-badge
-[forks-url]: https://github.com/github_username/repo_name/network/members
-[stars-shield]: https://img.shields.io/github/stars/github_username/repo_name.svg?style=for-the-badge
-[stars-url]: https://github.com/github_username/repo_name/stargazers
-[issues-shield]: https://img.shields.io/github/issues/github_username/repo_name.svg?style=for-the-badge
-[issues-url]: https://github.com/github_username/repo_name/issues
-[license-shield]: https://img.shields.io/github/license/github_username/repo_name.svg?style=for-the-badge
-[license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/karafra/twitter-stream.svg?style=for-the-badge
+[contributors-url]: https://github.com/karafra/twitter-stream/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/karafra/twitter-stream.svg?style=for-the-badge
+[forks-url]: https://github.com/karafra/twitter-stream/network/members
+[stars-shield]: https://img.shields.io/github/stars/karafra/twitter-stream.svg?style=for-the-badge
+[stars-url]: https://github.com/karafra/twitter-stream/stargazers
+[issues-shield]: https://img.shields.io/github/issues/karafra/twitter-stream.svg?style=for-the-badge
+[issues-url]: https://github.com/karafra/twitter-stream/issues
+[license-shield]: https://img.shields.io/github/license/karafra/twitter-stream.svg?style=for-the-badge
+[license-url]: https://github.com/karafra/twitter-stream/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/linkedin_username
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: .github/img/screenshot.png
+[codecov-shield]: https://img.shields.io/codecov/c/gh/karafra/twitter-stream?style=for-the-badge&token=6dyM57ThGb
+[codecov-url]: https://app.codecov.io/gh/karafra/twitter-stream/
