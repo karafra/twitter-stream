@@ -1,11 +1,10 @@
 using Microsoft.AspNetCore.Mvc;
 using Application.Contracts;
-using Application.Services;
 
 namespace Presentation.Controllers;
 
-[Controller]
-[Route("api")]
+[Route("ws")]
+[ApiController]
 public sealed class WebSocketController : Controller
 {
 
@@ -24,18 +23,27 @@ public sealed class WebSocketController : Controller
 
 
   [HttpGet]
-  [Route("/ws")]
+  [Route("/echo")]
   public async Task GetWebSocket()
   {
     if (HttpContext.WebSockets.IsWebSocketRequest)
     {
-    _logger.LogDebug("Initiating websocket connection");
+      _logger.LogDebug("Initiating websocket connection");
       using (var webSocket = await HttpContext.WebSockets.AcceptWebSocketAsync())
       {
         _logger.LogDebug("Websocket connection established");
         await _webSocketService.Echo(webSocket, default);
       }
     }
+  }
 
+  [HttpGet]
+  [Route("/tweetStream")]
+  public async Task StreamTweets()
+  {
+    using (var webSocket = await HttpContext.WebSockets.AcceptWebSocketAsync())
+    {
+      await _webSocketService.StreamTweets(webSocket);
+    }
   } 
 }
