@@ -8,7 +8,7 @@ namespace Application.Services;
 public sealed class WebSocketService : IWebSocketService
 {
   private ILogger _logger;
-  public WebSocketService(ILogger<WebSocketService> logger)
+  public WebSocketService(ILogger<IWebSocketService> logger)
   {
     _logger = logger;
   }
@@ -16,9 +16,10 @@ public sealed class WebSocketService : IWebSocketService
   public async Task Echo(WebSocket socket, CancellationToken cancellationToken = default)
   {
     var buffer = new Byte[1024 * 4];
-    var result = await socket.ReceiveAsync(new ArraySegment<byte>(buffer), CancellationToken.None);
+    var result = await socket.ReceiveAsync(new ArraySegment<byte>(buffer), cancellationToken);
     while(!result.CloseStatus.HasValue)
     {
+      System.Console.WriteLine("A");
       var serverMsg =  Encoding.UTF8.GetBytes($"Server: Hello. You said: {Encoding.UTF8.GetString(buffer)}");
       await socket.SendAsync(
         new ArraySegment<byte>(serverMsg, 0, serverMsg.Length),
