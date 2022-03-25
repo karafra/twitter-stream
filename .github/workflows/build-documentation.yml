@@ -31,7 +31,7 @@ jobs:
         working-directory: docs
         run: docfx docfx.json
       - name: Rename documentation entry point
-        run: rename docs/_site/Index.html index.html
+        run: Rename-Item "docs/_site/Index.html" -NewName "index.html"
       - name: Push documentation
         if: github.event_name == 'push'
         uses: peaceiris/actions-gh-pages@v3
