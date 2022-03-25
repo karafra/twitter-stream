@@ -156,8 +156,12 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 - [x] Add Tests
   - [x] Connect to codecov
 - [x] Add CI
-- [ ] Add Websocket communication between client and server
-
+- [x] Add Websocket communication between client and server
+  - [x] Frontend javascript to receive messages 
+  - [x] Backend to send tweets
+- [ ] Improve UI
+  - [ ] Add styles
+  - [ ] Add effects when new tweet appears
 
 See the [open issues](https://github.com/karafra/twitter-stream/issues) for a full list of proposed features (and known issues).
 
