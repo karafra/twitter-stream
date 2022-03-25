@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-using Infrastructure.Twitter;
+using TwitterSharp.Client;
 using Presentation.Pages;
 
 namespace Presentation.Controllers;
