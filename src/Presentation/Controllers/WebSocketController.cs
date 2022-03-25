@@ -3,6 +3,9 @@ using Application.Contracts;
 
 namespace Presentation.Controllers;
 
+/// <summary>
+/// Controller handling websockets
+/// </summary>
 [Route("ws")]
 [ApiController]
 public sealed class WebSocketController : Controller
@@ -21,7 +24,10 @@ public sealed class WebSocketController : Controller
     _webSocketService = webSocketService;
   }
 
-
+  /// <summary>
+  /// Endpoint to test websocket reception
+  /// </summary>
+  /// <returns></returns>
   [HttpGet]
   [Route("/echo")]
   public async Task GetWebSocket()
@@ -37,6 +43,11 @@ public sealed class WebSocketController : Controller
     }
   }
 
+  /// <summary>
+  /// Endpoint that starts socket for streaming of tweets
+  /// </summary>
+  /// <param name="cancellationToken">Cancellation token</param>
+  /// <returns></returns>
   [HttpGet]
   [Route("/tweetStream")]
   public async Task StreamTweets(CancellationToken cancellationToken = default)
