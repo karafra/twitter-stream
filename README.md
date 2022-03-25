@@ -133,6 +133,7 @@ If output is in format `6.0.xxx` then you have the correct version, if command r
       apiKey: YOUR_API_KEY
       apiSecret: YOUR_API_SECRET
       bearerToken: YOUR_BEARER_TOKEN
+      hashtag: "#ukraine"
    ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
