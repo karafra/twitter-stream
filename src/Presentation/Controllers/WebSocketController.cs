@@ -39,11 +39,11 @@ public sealed class WebSocketController : Controller
 
   [HttpGet]
   [Route("/tweetStream")]
-  public async Task StreamTweets()
+  public async Task StreamTweets(CancellationToken cancellationToken = default)
   {
     using (var webSocket = await HttpContext.WebSockets.AcceptWebSocketAsync())
     {
-      await _webSocketService.StreamTweets(webSocket);
+      await _webSocketService.StreamTweets(webSocket, cancellationToken);
     }
   } 
 }
