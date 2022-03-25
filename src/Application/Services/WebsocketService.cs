@@ -6,6 +6,9 @@ using TwitterSharp.Client;
 
 namespace Application.Services;
 
+/// <summary>
+/// Service handling websockets
+/// </summary>
 public sealed class WebSocketService : IWebSocketService
 {
     private ILogger _logger;
@@ -21,6 +24,12 @@ public sealed class WebSocketService : IWebSocketService
         _twitterClient = twitterClient;
     }
 
+    /// <summary>
+    /// Echoes given message to senders websocket in format "Server: Hello. You said: {Message}"
+    /// </summary>
+    /// <param name="socket">Socket opened by client</param>
+    /// <param name="cancellationToken">Cancellation token</param>
+    /// <returns></returns>
     public async Task Echo(WebSocket socket, CancellationToken cancellationToken = default)
     {
         var buffer = new Byte[1024 * 4];
@@ -63,6 +72,12 @@ public sealed class WebSocketService : IWebSocketService
         );
     }
 
+    /// <summary>
+    /// Strems tweets to socket opened by user
+    /// </summary>
+    /// <param name="socket">Socket opened by user</param>
+    /// <param name="cancellationToken">Cancellation token</param>
+    /// <returns></returns>
     public async Task StreamTweets(WebSocket socket, CancellationToken cancellationToken = default)
     {
         CancellationTokenSource taskController = new CancellationTokenSource();
