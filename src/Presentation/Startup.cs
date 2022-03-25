@@ -15,6 +15,9 @@ internal sealed class Startup
   /// </summary>
   public IConfigurationRoot Configuration { get; }
 
+  /// <summary>
+  /// Starter class
+  /// </summary>
   public Startup()
   {
     var builder = new ConfigurationBuilder();
