@@ -36,7 +36,7 @@
   <p align="center">
     Streaming twitter hashtag to browser
     <br />
-    <a href="https://github.com/karafra/twitter-stream/wiki/"><strong>Explore the docs »</strong></a>
+    <a href="https://karafra.github.io/twitter-stream/api/index.html"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://github.com/karafra/twitter-stream">View Demo</a>
