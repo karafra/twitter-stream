@@ -11,8 +11,6 @@ namespace Presentation.Controllers;
 [Route("")]
 public sealed class WelcomePageController : Controller
 {
-  private readonly TwitterClient _twitterClient;
-
   /// <summary>
   /// Endpoint for showing main page
   /// </summary>
