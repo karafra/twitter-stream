@@ -34,7 +34,7 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           images: |
-            my-docker-hub-namespace/my-docker-hub-repository
+            karafra/twitter-stream
             ghcr.io/${{ github.repository }}
       
       - name: Build and push Docker images
