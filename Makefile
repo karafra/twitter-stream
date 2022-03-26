@@ -14,3 +14,5 @@ coverage:
 	dotnet-coverage collect "make test" --output-format cobertura
 build-prod:
 	dotnet build --configuration Release --no-restore
+publish:
+	dotnet publish -c Release -o out
