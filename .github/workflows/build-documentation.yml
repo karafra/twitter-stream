@@ -33,7 +33,7 @@ jobs:
       - name: Rename documentation entry point
         run: Rename-Item -Path "docs/_site/Index.html" -NewName "index.html"
       - name: Push documentation
-        if: github.event_name == 'push'
+        if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
