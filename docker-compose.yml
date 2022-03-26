@@ -2,6 +2,5 @@ version: '3.9'
 services:
   web:
    build: .
-   image: Dockerfile
    ports:
-     - 5000:8080
+     - 5000:5000
