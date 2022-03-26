@@ -1,3 +1,7 @@
+# :bookmark: [v0.8.1] (black tulip) - 26.3.2022
+## Changed
+- CI error appearing on publishing to Docker hub 
+
 # :bookmark: [v0.8.0] (blue whale :whale:) - 26.3.2022
 Initial release that contains MVP.
 
