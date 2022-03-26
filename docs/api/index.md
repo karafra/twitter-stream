@@ -28,7 +28,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/karafra/twitter-stream">
-    <img src=".github/img/logo.png" alt="Logo" width="80" height="80">
+    <img src="../img/logo.png" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">Twitter Stream </h3>
@@ -220,6 +220,6 @@ Project Link: [https://github.com/karafra/twitter-stream](https://github.com/kar
 [license-url]: https://github.com/karafra/twitter-stream/blob/master/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/linkedin_username
-[product-screenshot]: .github/img/screenshot.gif
+[product-screenshot]: ../img/screenshot.gif
 [codecov-shield]: https://img.shields.io/codecov/c/gh/karafra/twitter-stream?style=for-the-badge&token=6dyM57ThGb
 [codecov-url]: https://app.codecov.io/gh/karafra/twitter-stream/
