@@ -15,6 +15,11 @@ public sealed class WebSocketService : IWebSocketService
 
     private TwitterClient _twitterClient;
 
+    /// <summary>
+    /// Service handling websockets
+    /// </summary>
+    /// <param name="logger">logger serbice</param>
+    /// <param name="twitterClient">twitter client</param>
     public WebSocketService(
       ILogger<IWebSocketService> logger,
       TwitterClient twitterClient
