@@ -81,7 +81,7 @@
 
 <div align="center">
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot]](https://github.com/karafra/twitter-stream/)
 
 </div>
 
@@ -127,7 +127,7 @@ If output is in format `6.0.xxx` then you have the correct version, if command r
    ```sh
    dotnet restore
    ```
-4. Enter your API keys into *twitter* section of [configuration file](./configuration.yml)
+4. Enter your API keys into *twitter* section of configuration file
    ```yml
     twitter:
       apiKey: YOUR_API_KEY
@@ -190,7 +190,7 @@ Don't forget to give the project a star! Thanks again!
 <!-- LICENSE -->
 ## License
 
-Distributed under the Apache2.0. See [LICENSE](./LICENSE) for more information.
+Distributed under the Apache2.0. See [LICENSE](https://github.com/karafra/twitter-stream/blob/master/LICENSE) for more information.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
