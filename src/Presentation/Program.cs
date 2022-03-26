@@ -33,7 +33,7 @@ public sealed class Program
     var builder = WebHost.CreateDefaultBuilder();
     builder.UseWebRoot(Path.Combine(Directory.GetCurrentDirectory(), "wwwroot"));
     builder.UseStartup<Startup>();
-    builder.UseUrls("http://localhost:5000");
+    builder.UseUrls(Environment.GetEnvironmentVariable("ASPNETCORE_URLS") ?? "http://localhost:5000/");
     return builder.Build();
   }
 }
