@@ -28,6 +28,7 @@ If output is in format `6.0.xxx` then you have the correct version, if command r
       apiKey: YOUR_API_KEY
       apiSecret: YOUR_API_SECRET
       bearerToken: YOUR_BEARER_TOKEN
+      hashtag: "#ukraine"
    ```
 _For more information, look at [API reference](https://karafra.github.io/twitter-stream/api/index.html)_
 
