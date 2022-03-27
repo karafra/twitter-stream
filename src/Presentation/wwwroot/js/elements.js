@@ -6,11 +6,11 @@ const $main = $("#main");
  * @param {string} text
  * @returns
  */
-const createDiv = (text, id) => {
+const createDiv = (author, text, id) => {
   const template = `
     <div id="${id}" class="message">
         <div class="header">
-            Header
+            ${author}
         </div>
         
         <div class="content">
@@ -23,6 +23,29 @@ const createDiv = (text, id) => {
   main.innerHTML += template.trim();
   return main.childNodes[main.childElementCount - 1];
 };
+
+const createImageHolder = (mediaArr) => {
+  let template = "";
+  for (const link of mediaArr) {
+    template.concat(`<img src=${link}> </img>\n`)  
+  }
+  return template;
+}
+
+const createDivWithMedia = (author, text, mediaArr, id) => {
+    const template = `
+    <div id="${id}" class="message">
+        <div class="header">
+            ${author}
+        </div>
+        
+        <div class="content">
+            ${text}
+            ${createImageHolder(mediaArr)}    
+        </div>
+    </div>`;
+  return template;
+} 
 
 /**
  * Places div somewhere on the screen.
