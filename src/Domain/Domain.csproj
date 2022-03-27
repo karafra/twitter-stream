@@ -8,4 +8,8 @@
     <AssemblyName>Domain</AssemblyName>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="TwitterSharp" Version="2.0.0" />
+  </ItemGroup>
+
 </Project>
