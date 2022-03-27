@@ -22,7 +22,7 @@ If output is in format `6.0.xxx` then you have the correct version, if command r
    ```sh
    dotnet restore
    ```
-4. Enter your API keys into *twitter* section of [configuration file](./configuration.yml)
+4. Enter your API keys into *twitter* section of configuration file
    ```yml
     twitter:
       apiKey: YOUR_API_KEY

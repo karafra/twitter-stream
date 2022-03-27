@@ -81,7 +81,7 @@
 
 <div align="center">
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot]](https://karafra.github.io/twitter-stream/ )
 
 </div>
 
@@ -145,7 +145,7 @@ If output is in format `6.0.xxx` then you have the correct version, if command r
 
 Running this application is as simple as opening web browser. Literally ... :tada:
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+_For more examples, please refer to the [Documentation](https://karafra.github.io/twitter-stream/ )_
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
