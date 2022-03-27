@@ -3,6 +3,7 @@ using Microsoft.Extensions.Logging;
 using System.Net.WebSockets;
 using Application.Contracts;
 using TwitterSharp.Client;
+using Domain.Models;
 
 namespace Application.Services;
 
@@ -65,14 +66,12 @@ public sealed class WebSocketService : IWebSocketService
 
     private async Task SendTweetsLoop(WebSocket socket, CancellationToken cancellationToken = default)
     {
-        var buffer = new Byte[1024 * 4];
+        var model = new TweetModel(socket);
         await _twitterClient.NextTweetStreamAsync(
           tweet =>
           {
-              var serverMsg = Encoding.UTF8.GetBytes(tweet.Text);
-              var segment = new ArraySegment<byte>(serverMsg, 0, serverMsg.Length);
+              model.SendTweetToSocket(tweet);
               _logger.LogInformation($"Tweet {tweet.Text} sent to socket");
-              socket.SendAsync(segment, WebSocketMessageType.Text, true, cancellationToken);
           }
         );
     }
