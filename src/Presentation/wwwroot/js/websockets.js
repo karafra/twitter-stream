@@ -12,14 +12,7 @@ const createId = () => "id" + new Date().getTime();
  * @param {MessageEvent} message
  */
 const onMessage = (message) => {
-  let id;
-  if (stack.length == 40) {
-    const id = stack.shift();
-    try {
-      document.getElementById(id).remove();
-    } catch (err) {}
-  }
-  id = createId();
+  const id = createId();
   const div = createDiv(message.data, id);
   placeDiv(div);
   stack.push(id);

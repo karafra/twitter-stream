@@ -31,13 +31,13 @@ const createDiv = (text, id) => {
  */
 const placeDiv = (div) => {
   $div = $(div);
-  $div.fadeOut(5000, function () {
-    var maxLeft = $(window).width() - $div.width() - 15; // substract padding
+  $div.fadeOut(10_000, function () {
+    var maxLeft = $(window).width() - $div.width() - 25; // substract padding
     var maxTop = $(window).height() - $div.height() - 100; // substract padding
     var leftPos = Math.floor(Math.random() * (maxLeft + 1));
     var topPos = Math.floor(Math.random() * (maxTop + 1));
-    $div.css({ left: leftPos, top: topPos}).fadeIn(1);
-    $main.append($div);
+    $div.css({ left: leftPos, top: topPos}).fadeIn(1000);
+    $div.hide().appendTo("#main").fadeIn(1000);
   });
   try {
     $div.remove();
