@@ -12,8 +12,17 @@ const createId = () => "id" + new Date().getTime();
  * @param {MessageEvent} message
  */
 const onMessage = (message) => {
+  const parsedMessage = JSON.parse(message);
   const id = createId();
-  const div = createDiv(message.data, id);
+  const div = parsedMessage.HasMedia
+    ?
+      createDivWithMedia(
+        parsedMessage.Author,
+        parsedMessage.Message,
+        parsedMessage.Media
+      )
+    :  
+      createDiv(parsedMessage.Author, parsedMessage.Message, id);
   placeDiv(div);
   stack.push(id);
 };
