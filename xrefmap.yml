@@ -1,0 +1,306 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: Application
+  name: Application
+  href: api/Application.html
+  commentId: N:Application
+  fullName: Application
+  nameWithType: Application
+- uid: Application.Application
+  name: Application
+  href: api/Application.Application.html
+  commentId: T:Application.Application
+  fullName: Application.Application
+  nameWithType: Application
+- uid: Application.Application.MountApplication(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name: MountApplication(IServiceCollection)
+  href: api/Application.Application.html#Application_Application_MountApplication_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  commentId: M:Application.Application.MountApplication(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  fullName: Application.Application.MountApplication(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  nameWithType: Application.MountApplication(IServiceCollection)
+- uid: Application.Application.MountApplication*
+  name: MountApplication
+  href: api/Application.Application.html#Application_Application_MountApplication_
+  commentId: Overload:Application.Application.MountApplication
+  isSpec: "True"
+  fullName: Application.Application.MountApplication
+  nameWithType: Application.MountApplication
+- uid: Application.Contracts
+  name: Application.Contracts
+  href: api/Application.Contracts.html
+  commentId: N:Application.Contracts
+  fullName: Application.Contracts
+  nameWithType: Application.Contracts
+- uid: Application.Contracts.IWebSocketService
+  name: IWebSocketService
+  href: api/Application.Contracts.IWebSocketService.html
+  commentId: T:Application.Contracts.IWebSocketService
+  fullName: Application.Contracts.IWebSocketService
+  nameWithType: IWebSocketService
+- uid: Application.Contracts.IWebSocketService.Echo(System.Net.WebSockets.WebSocket,CancellationToken)
+  name: Echo(WebSocket, CancellationToken)
+  href: api/Application.Contracts.IWebSocketService.html#Application_Contracts_IWebSocketService_Echo_System_Net_WebSockets_WebSocket_CancellationToken_
+  commentId: M:Application.Contracts.IWebSocketService.Echo(System.Net.WebSockets.WebSocket,CancellationToken)
+  fullName: Application.Contracts.IWebSocketService.Echo(System.Net.WebSockets.WebSocket, CancellationToken)
+  nameWithType: IWebSocketService.Echo(WebSocket, CancellationToken)
+- uid: Application.Contracts.IWebSocketService.Echo*
+  name: Echo
+  href: api/Application.Contracts.IWebSocketService.html#Application_Contracts_IWebSocketService_Echo_
+  commentId: Overload:Application.Contracts.IWebSocketService.Echo
+  isSpec: "True"
+  fullName: Application.Contracts.IWebSocketService.Echo
+  nameWithType: IWebSocketService.Echo
+- uid: Application.Contracts.IWebSocketService.StreamTweets(System.Net.WebSockets.WebSocket,CancellationToken)
+  name: StreamTweets(WebSocket, CancellationToken)
+  href: api/Application.Contracts.IWebSocketService.html#Application_Contracts_IWebSocketService_StreamTweets_System_Net_WebSockets_WebSocket_CancellationToken_
+  commentId: M:Application.Contracts.IWebSocketService.StreamTweets(System.Net.WebSockets.WebSocket,CancellationToken)
+  fullName: Application.Contracts.IWebSocketService.StreamTweets(System.Net.WebSockets.WebSocket, CancellationToken)
+  nameWithType: IWebSocketService.StreamTweets(WebSocket, CancellationToken)
+- uid: Application.Contracts.IWebSocketService.StreamTweets*
+  name: StreamTweets
+  href: api/Application.Contracts.IWebSocketService.html#Application_Contracts_IWebSocketService_StreamTweets_
+  commentId: Overload:Application.Contracts.IWebSocketService.StreamTweets
+  isSpec: "True"
+  fullName: Application.Contracts.IWebSocketService.StreamTweets
+  nameWithType: IWebSocketService.StreamTweets
+- uid: Application.Services
+  name: Application.Services
+  href: api/Application.Services.html
+  commentId: N:Application.Services
+  fullName: Application.Services
+  nameWithType: Application.Services
+- uid: Application.Services.WebSocketService
+  name: WebSocketService
+  href: api/Application.Services.WebSocketService.html
+  commentId: T:Application.Services.WebSocketService
+  fullName: Application.Services.WebSocketService
+  nameWithType: WebSocketService
+- uid: Application.Services.WebSocketService.#ctor(Microsoft.Extensions.Logging.ILogger{Application.Contracts.IWebSocketService},TwitterSharp.Client.TwitterClient)
+  name: WebSocketService(ILogger<IWebSocketService>, TwitterClient)
+  href: api/Application.Services.WebSocketService.html#Application_Services_WebSocketService__ctor_Microsoft_Extensions_Logging_ILogger_Application_Contracts_IWebSocketService__TwitterSharp_Client_TwitterClient_
+  commentId: M:Application.Services.WebSocketService.#ctor(Microsoft.Extensions.Logging.ILogger{Application.Contracts.IWebSocketService},TwitterSharp.Client.TwitterClient)
+  name.vb: WebSocketService(ILogger(Of IWebSocketService), TwitterClient)
+  fullName: Application.Services.WebSocketService.WebSocketService(Microsoft.Extensions.Logging.ILogger<Application.Contracts.IWebSocketService>, TwitterSharp.Client.TwitterClient)
+  fullName.vb: Application.Services.WebSocketService.WebSocketService(Microsoft.Extensions.Logging.ILogger(Of Application.Contracts.IWebSocketService), TwitterSharp.Client.TwitterClient)
+  nameWithType: WebSocketService.WebSocketService(ILogger<IWebSocketService>, TwitterClient)
+  nameWithType.vb: WebSocketService.WebSocketService(ILogger(Of IWebSocketService), TwitterClient)
+- uid: Application.Services.WebSocketService.#ctor*
+  name: WebSocketService
+  href: api/Application.Services.WebSocketService.html#Application_Services_WebSocketService__ctor_
+  commentId: Overload:Application.Services.WebSocketService.#ctor
+  isSpec: "True"
+  fullName: Application.Services.WebSocketService.WebSocketService
+  nameWithType: WebSocketService.WebSocketService
+- uid: Application.Services.WebSocketService.Echo(System.Net.WebSockets.WebSocket,CancellationToken)
+  name: Echo(WebSocket, CancellationToken)
+  href: api/Application.Services.WebSocketService.html#Application_Services_WebSocketService_Echo_System_Net_WebSockets_WebSocket_CancellationToken_
+  commentId: M:Application.Services.WebSocketService.Echo(System.Net.WebSockets.WebSocket,CancellationToken)
+  fullName: Application.Services.WebSocketService.Echo(System.Net.WebSockets.WebSocket, CancellationToken)
+  nameWithType: WebSocketService.Echo(WebSocket, CancellationToken)
+- uid: Application.Services.WebSocketService.Echo*
+  name: Echo
+  href: api/Application.Services.WebSocketService.html#Application_Services_WebSocketService_Echo_
+  commentId: Overload:Application.Services.WebSocketService.Echo
+  isSpec: "True"
+  fullName: Application.Services.WebSocketService.Echo
+  nameWithType: WebSocketService.Echo
+- uid: Application.Services.WebSocketService.StreamTweets(System.Net.WebSockets.WebSocket,CancellationToken)
+  name: StreamTweets(WebSocket, CancellationToken)
+  href: api/Application.Services.WebSocketService.html#Application_Services_WebSocketService_StreamTweets_System_Net_WebSockets_WebSocket_CancellationToken_
+  commentId: M:Application.Services.WebSocketService.StreamTweets(System.Net.WebSockets.WebSocket,CancellationToken)
+  fullName: Application.Services.WebSocketService.StreamTweets(System.Net.WebSockets.WebSocket, CancellationToken)
+  nameWithType: WebSocketService.StreamTweets(WebSocket, CancellationToken)
+- uid: Application.Services.WebSocketService.StreamTweets*
+  name: StreamTweets
+  href: api/Application.Services.WebSocketService.html#Application_Services_WebSocketService_StreamTweets_
+  commentId: Overload:Application.Services.WebSocketService.StreamTweets
+  isSpec: "True"
+  fullName: Application.Services.WebSocketService.StreamTweets
+  nameWithType: WebSocketService.StreamTweets
+- uid: Infrastructure
+  name: Infrastructure
+  href: api/Infrastructure.html
+  commentId: N:Infrastructure
+  fullName: Infrastructure
+  nameWithType: Infrastructure
+- uid: Infrastructure.DependencyInjection
+  name: DependencyInjection
+  href: api/Infrastructure.DependencyInjection.html
+  commentId: T:Infrastructure.DependencyInjection
+  fullName: Infrastructure.DependencyInjection
+  nameWithType: DependencyInjection
+- uid: Infrastructure.DependencyInjection.AddTwitterClient(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name: AddTwitterClient(IServiceCollection)
+  href: api/Infrastructure.DependencyInjection.html#Infrastructure_DependencyInjection_AddTwitterClient_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  commentId: M:Infrastructure.DependencyInjection.AddTwitterClient(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  fullName: Infrastructure.DependencyInjection.AddTwitterClient(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  nameWithType: DependencyInjection.AddTwitterClient(IServiceCollection)
+- uid: Infrastructure.DependencyInjection.AddTwitterClient*
+  name: AddTwitterClient
+  href: api/Infrastructure.DependencyInjection.html#Infrastructure_DependencyInjection_AddTwitterClient_
+  commentId: Overload:Infrastructure.DependencyInjection.AddTwitterClient
+  isSpec: "True"
+  fullName: Infrastructure.DependencyInjection.AddTwitterClient
+  nameWithType: DependencyInjection.AddTwitterClient
+- uid: Infrastructure.Twitter
+  name: Infrastructure.Twitter
+  href: api/Infrastructure.Twitter.html
+  commentId: N:Infrastructure.Twitter
+  fullName: Infrastructure.Twitter
+  nameWithType: Infrastructure.Twitter
+- uid: Infrastructure.Twitter.TwitterClient
+  name: TwitterClient
+  href: api/Infrastructure.Twitter.TwitterClient.html
+  commentId: T:Infrastructure.Twitter.TwitterClient
+  fullName: Infrastructure.Twitter.TwitterClient
+  nameWithType: TwitterClient
+- uid: Infrastructure.Twitter.TwitterClient.#ctor(Microsoft.Extensions.Configuration.IConfigurationRoot,Microsoft.Extensions.Logging.ILogger{Infrastructure.Twitter.TwitterClient})
+  name: TwitterClient(IConfigurationRoot, ILogger<TwitterClient>)
+  href: api/Infrastructure.Twitter.TwitterClient.html#Infrastructure_Twitter_TwitterClient__ctor_Microsoft_Extensions_Configuration_IConfigurationRoot_Microsoft_Extensions_Logging_ILogger_Infrastructure_Twitter_TwitterClient__
+  commentId: M:Infrastructure.Twitter.TwitterClient.#ctor(Microsoft.Extensions.Configuration.IConfigurationRoot,Microsoft.Extensions.Logging.ILogger{Infrastructure.Twitter.TwitterClient})
+  name.vb: TwitterClient(IConfigurationRoot, ILogger(Of TwitterClient))
+  fullName: Infrastructure.Twitter.TwitterClient.TwitterClient(Microsoft.Extensions.Configuration.IConfigurationRoot, Microsoft.Extensions.Logging.ILogger<Infrastructure.Twitter.TwitterClient>)
+  fullName.vb: Infrastructure.Twitter.TwitterClient.TwitterClient(Microsoft.Extensions.Configuration.IConfigurationRoot, Microsoft.Extensions.Logging.ILogger(Of Infrastructure.Twitter.TwitterClient))
+  nameWithType: TwitterClient.TwitterClient(IConfigurationRoot, ILogger<TwitterClient>)
+  nameWithType.vb: TwitterClient.TwitterClient(IConfigurationRoot, ILogger(Of TwitterClient))
+- uid: Infrastructure.Twitter.TwitterClient.#ctor*
+  name: TwitterClient
+  href: api/Infrastructure.Twitter.TwitterClient.html#Infrastructure_Twitter_TwitterClient__ctor_
+  commentId: Overload:Infrastructure.Twitter.TwitterClient.#ctor
+  isSpec: "True"
+  fullName: Infrastructure.Twitter.TwitterClient.TwitterClient
+  nameWithType: TwitterClient.TwitterClient
+- uid: Presentation
+  name: Presentation
+  href: api/Presentation.html
+  commentId: N:Presentation
+  fullName: Presentation
+  nameWithType: Presentation
+- uid: Presentation.Controllers
+  name: Presentation.Controllers
+  href: api/Presentation.Controllers.html
+  commentId: N:Presentation.Controllers
+  fullName: Presentation.Controllers
+  nameWithType: Presentation.Controllers
+- uid: Presentation.Controllers.WebSocketController
+  name: WebSocketController
+  href: api/Presentation.Controllers.WebSocketController.html
+  commentId: T:Presentation.Controllers.WebSocketController
+  fullName: Presentation.Controllers.WebSocketController
+  nameWithType: WebSocketController
+- uid: Presentation.Controllers.WebSocketController.#ctor(ILogger{Presentation.Controllers.WebSocketController},Application.Contracts.IWebSocketService)
+  name: WebSocketController(ILogger<WebSocketController>, IWebSocketService)
+  href: api/Presentation.Controllers.WebSocketController.html#Presentation_Controllers_WebSocketController__ctor_ILogger_Presentation_Controllers_WebSocketController__Application_Contracts_IWebSocketService_
+  commentId: M:Presentation.Controllers.WebSocketController.#ctor(ILogger{Presentation.Controllers.WebSocketController},Application.Contracts.IWebSocketService)
+  name.vb: WebSocketController(ILogger(Of WebSocketController), IWebSocketService)
+  fullName: Presentation.Controllers.WebSocketController.WebSocketController(ILogger<Presentation.Controllers.WebSocketController>, Application.Contracts.IWebSocketService)
+  fullName.vb: Presentation.Controllers.WebSocketController.WebSocketController(ILogger(Of Presentation.Controllers.WebSocketController), Application.Contracts.IWebSocketService)
+  nameWithType: WebSocketController.WebSocketController(ILogger<WebSocketController>, IWebSocketService)
+  nameWithType.vb: WebSocketController.WebSocketController(ILogger(Of WebSocketController), IWebSocketService)
+- uid: Presentation.Controllers.WebSocketController.#ctor*
+  name: WebSocketController
+  href: api/Presentation.Controllers.WebSocketController.html#Presentation_Controllers_WebSocketController__ctor_
+  commentId: Overload:Presentation.Controllers.WebSocketController.#ctor
+  isSpec: "True"
+  fullName: Presentation.Controllers.WebSocketController.WebSocketController
+  nameWithType: WebSocketController.WebSocketController
+- uid: Presentation.Controllers.WebSocketController.GetWebSocket
+  name: GetWebSocket()
+  href: api/Presentation.Controllers.WebSocketController.html#Presentation_Controllers_WebSocketController_GetWebSocket
+  commentId: M:Presentation.Controllers.WebSocketController.GetWebSocket
+  fullName: Presentation.Controllers.WebSocketController.GetWebSocket()
+  nameWithType: WebSocketController.GetWebSocket()
+- uid: Presentation.Controllers.WebSocketController.GetWebSocket*
+  name: GetWebSocket
+  href: api/Presentation.Controllers.WebSocketController.html#Presentation_Controllers_WebSocketController_GetWebSocket_
+  commentId: Overload:Presentation.Controllers.WebSocketController.GetWebSocket
+  isSpec: "True"
+  fullName: Presentation.Controllers.WebSocketController.GetWebSocket
+  nameWithType: WebSocketController.GetWebSocket
+- uid: Presentation.Controllers.WebSocketController.StreamTweets(CancellationToken)
+  name: StreamTweets(CancellationToken)
+  href: api/Presentation.Controllers.WebSocketController.html#Presentation_Controllers_WebSocketController_StreamTweets_CancellationToken_
+  commentId: M:Presentation.Controllers.WebSocketController.StreamTweets(CancellationToken)
+  fullName: Presentation.Controllers.WebSocketController.StreamTweets(CancellationToken)
+  nameWithType: WebSocketController.StreamTweets(CancellationToken)
+- uid: Presentation.Controllers.WebSocketController.StreamTweets*
+  name: StreamTweets
+  href: api/Presentation.Controllers.WebSocketController.html#Presentation_Controllers_WebSocketController_StreamTweets_
+  commentId: Overload:Presentation.Controllers.WebSocketController.StreamTweets
+  isSpec: "True"
+  fullName: Presentation.Controllers.WebSocketController.StreamTweets
+  nameWithType: WebSocketController.StreamTweets
+- uid: Presentation.Controllers.WelcomePageController
+  name: WelcomePageController
+  href: api/Presentation.Controllers.WelcomePageController.html
+  commentId: T:Presentation.Controllers.WelcomePageController
+  fullName: Presentation.Controllers.WelcomePageController
+  nameWithType: WelcomePageController
+- uid: Presentation.Controllers.WelcomePageController._WelcomePage
+  name: _WelcomePage()
+  href: api/Presentation.Controllers.WelcomePageController.html#Presentation_Controllers_WelcomePageController__WelcomePage
+  commentId: M:Presentation.Controllers.WelcomePageController._WelcomePage
+  fullName: Presentation.Controllers.WelcomePageController._WelcomePage()
+  nameWithType: WelcomePageController._WelcomePage()
+- uid: Presentation.Controllers.WelcomePageController._WelcomePage*
+  name: _WelcomePage
+  href: api/Presentation.Controllers.WelcomePageController.html#Presentation_Controllers_WelcomePageController__WelcomePage_
+  commentId: Overload:Presentation.Controllers.WelcomePageController._WelcomePage
+  isSpec: "True"
+  fullName: Presentation.Controllers.WelcomePageController._WelcomePage
+  nameWithType: WelcomePageController._WelcomePage
+- uid: Presentation.Program
+  name: Program
+  href: api/Presentation.Program.html
+  commentId: T:Presentation.Program
+  fullName: Presentation.Program
+  nameWithType: Program
+- uid: Presentation.Program.BuildHost(System.String[])
+  name: BuildHost(String[])
+  href: api/Presentation.Program.html#Presentation_Program_BuildHost_System_String___
+  commentId: M:Presentation.Program.BuildHost(System.String[])
+  name.vb: BuildHost(String())
+  fullName: Presentation.Program.BuildHost(System.String[])
+  fullName.vb: Presentation.Program.BuildHost(System.String())
+  nameWithType: Program.BuildHost(String[])
+  nameWithType.vb: Program.BuildHost(String())
+- uid: Presentation.Program.BuildHost*
+  name: BuildHost
+  href: api/Presentation.Program.html#Presentation_Program_BuildHost_
+  commentId: Overload:Presentation.Program.BuildHost
+  isSpec: "True"
+  fullName: Presentation.Program.BuildHost
+  nameWithType: Program.BuildHost
+- uid: Presentation.Program.Main(System.String[])
+  name: Main(String[])
+  href: api/Presentation.Program.html#Presentation_Program_Main_System_String___
+  commentId: M:Presentation.Program.Main(System.String[])
+  name.vb: Main(String())
+  fullName: Presentation.Program.Main(System.String[])
+  fullName.vb: Presentation.Program.Main(System.String())
+  nameWithType: Program.Main(String[])
+  nameWithType.vb: Program.Main(String())
+- uid: Presentation.Program.Main*
+  name: Main
+  href: api/Presentation.Program.html#Presentation_Program_Main_
+  commentId: Overload:Presentation.Program.Main
+  isSpec: "True"
+  fullName: Presentation.Program.Main
+  nameWithType: Program.Main
+- uid: Presentation.Program.RunAsync(System.String[])
+  name: RunAsync(String[])
+  href: api/Presentation.Program.html#Presentation_Program_RunAsync_System_String___
+  commentId: M:Presentation.Program.RunAsync(System.String[])
+  name.vb: RunAsync(String())
+  fullName: Presentation.Program.RunAsync(System.String[])
+  fullName.vb: Presentation.Program.RunAsync(System.String())
+  nameWithType: Program.RunAsync(String[])
+  nameWithType.vb: Program.RunAsync(String())
+- uid: Presentation.Program.RunAsync*
+  name: RunAsync
+  href: api/Presentation.Program.html#Presentation_Program_RunAsync_
+  commentId: Overload:Presentation.Program.RunAsync
+  isSpec: "True"
+  fullName: Presentation.Program.RunAsync
+  nameWithType: Program.RunAsync

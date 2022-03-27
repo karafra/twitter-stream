@@ -1,0 +1,313 @@
+{
+  "homepages": [],
+  "source_base_path": "D:/a/twitter-stream/twitter-stream/docs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Application.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Application.html",
+          "hash": "EJ7IF/rmHayvgBNy/FzhCZe3T9sJr/ntf45EjlOe8wE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Contracts.IWebSocketService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Contracts.IWebSocketService.html",
+          "hash": "A8ZA8ma51YAK2c+MWVgUOOgEu+HKi8guSSWxQzeD/dw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Contracts.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Contracts.html",
+          "hash": "RngOez+86ccVy3m8U0fQbhAtRF94xbAm/prSkUHYtHc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Services.WebSocketService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Services.WebSocketService.html",
+          "hash": "+ATgG8TVxDBMNk8eTC/5ezdArlN3yZSkRX16g8t/0Ew="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.Services.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.Services.html",
+          "hash": "/gS5U1jfRrQ71Rp3os2XGo2Tpd86PPZtqe/wqE2wVGo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.html",
+          "hash": "DVcsIKZ04iJSVC+kvuVYavCtVF6hWZrjne+Zt17wFPQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Infrastructure.DependencyInjection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Infrastructure.DependencyInjection.html",
+          "hash": "5Z1+EWZvoSWAk6H5BkLmWPsTjIHlb7r9HCJGplnWvUQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Infrastructure.Twitter.TwitterClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Infrastructure.Twitter.TwitterClient.html",
+          "hash": "XPORhdFKiDk9m3oEnCuIotMxCZuUWm6RrpQMFeasyho="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Infrastructure.Twitter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Infrastructure.Twitter.html",
+          "hash": "AlcdR6g2nx5akYuDLX3/EfJtIMJ07uhH6vXOODsqH60="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Infrastructure.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Infrastructure.html",
+          "hash": "2VRzQF7VXRqPHy0mkoYXHzomHMKB8EZpXfqXiXYkpsc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Presentation.Controllers.WebSocketController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Presentation.Controllers.WebSocketController.html",
+          "hash": "lfmmHmqq9BDsuL0YUbIiZJjVP5ceAV1YLRskaFgyrc8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Presentation.Controllers.WelcomePageController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Presentation.Controllers.WelcomePageController.html",
+          "hash": "ltJNFuTzHuoYH4wVi+bZQXdozcPIfphI9pV79a4IcQE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Presentation.Controllers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Presentation.Controllers.html",
+          "hash": "eii+AAGI9L2NtVn3wC2BNWRPMPktAm1rpeUnRfMuWVM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Presentation.Program.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Presentation.Program.html",
+          "hash": "FQHss/aIwAqjT2LJiZr2KEJWkeWD5FPTjjQnv+G4ffY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Presentation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Presentation.html",
+          "hash": "x0ebf27hIyjTS3y8QTZXwscAsw1ZfM/ZvjrSOss9tTI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "vnResnZbBMbw7jK/cD6fAbvZP03ymq+xIoruxi+ysPo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "CH2w59V7IMZVZM3A9juqkBPbeHhMFm3ZK6GaxemTdj4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "img/logo.png",
+      "output": {
+        "resource": {
+          "relative_path": "img/logo.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "img/screenshot.gif",
+      "output": {
+        "resource": {
+          "relative_path": "img/screenshot.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "Wr1rp1+VsUBcoWyh3qYOK84lQpazoSYEYb4KwyV+ELI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "s+UecGKJLe11K3w4+MJjx6QoiqktkO8teeQG06lk8L0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 2,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 15,
+          "skipped_file_count": 0
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: last post processor info is null.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
