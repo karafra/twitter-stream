@@ -1,3 +1,18 @@
+# :bookmark: [v0.9.0] (yellow liquid) - 27.3.2022
+## Changed
+- Updated user interface
+    - Added effects for new tweets
+    - Added effect for disappearing tweets 
+    - Added js files managing UI
+- Product screenshots in documentation
+
+## Removed
+
+- Unused Razor templates
+
+## Added
+- Automerge for image optimization pull requests
+
 # :bookmark: [v0.8.1] (black tulip) - 26.3.2022
 ## Changed
 - CI error appearing on publishing to Docker hub 
